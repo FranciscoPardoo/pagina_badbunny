@@ -12,7 +12,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 255, 0);
+    background: rgb(255,124,0);
+    background: linear-gradient(180deg, rgba(255,124,0,1) 0%, rgba(232,255,0,1) 58%);
     width: 100vw;
     height: 35vh;
 }
@@ -108,7 +109,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 0);
+    background: rgb(255,124,0);
+    background: linear-gradient(0deg, rgba(255,124,0,1) 0%, rgba(232,255,0,1) 58%);
     color: white;
     width: 100vw;
     height: 35vh;
@@ -287,6 +289,10 @@ ul {
     height: 400px;
     border: 2px solid white;
     border-radius: 1rem;
+}
+
+.estilo__galeria img:hover {
+    transform: scale(1.2);
 }
 
 .estilo__galeria iframe {
