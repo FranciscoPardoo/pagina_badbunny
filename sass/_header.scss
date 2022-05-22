@@ -1,0 +1,34 @@
+.header {
+    &__bg-yellow {
+        background: $color-uno-degrade;
+        background: $color-dos-degrade;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__titulo {
+        display: flex;
+        justify-content: flex-start;
+        color: $color-font;
+        font-size: 6rem;
+        font-style: italic;
+        font-family: $font-principal;
+    }
+    &__menu {
+        display: flex;
+        justify-content: flex-end;
+        ul {
+            font-family: $font-principal;
+            font-size: 2rem;
+            color: $color-font;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.hover:hover {
+    transform: scale(1.2);
+}

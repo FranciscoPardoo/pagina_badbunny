@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $color-uno-degrade;
+    background: $color-dos-degrade;
+    color: $color-font;
+    height: 32vh;
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+    h3 {
+        font-style: italic;
+        font-family: $font-principal;
+    }
+}
+
+.pie p {
+    font-family: $font-principal;
+}
