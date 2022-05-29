@@ -300,10 +300,10 @@ body {
 .header__titulo {
   display: flex;
   justify-content: flex-start;
-  color: white;
-  font-size: 6rem;
   font-style: italic;
-  font-family: "Bebas Neue", cursive; }
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 6rem; }
 
 .header__menu {
   display: flex;
@@ -323,10 +323,10 @@ body {
   margin-bottom: 3rem; }
 
 .titulo__index h2 {
-  font-size: 3rem;
   font-style: italic;
+  color: white;
   font-family: "Bebas Neue", cursive;
-  color: white; }
+  font-size: 3rem; }
 
 p {
   font-size: 2rem;
@@ -356,7 +356,13 @@ footer {
     padding: 0.5rem; }
   footer h3 {
     font-style: italic;
-    font-family: "Bebas Neue", cursive; }
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1rem; }
+
+.logo__redes {
+  width: 20vw;
+  height: 20vh; }
 
 .pie p {
   font-family: "Bebas Neue", cursive; }
@@ -366,10 +372,10 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
   margin-top: 2rem;
-  font-size: 4rem;
   font-style: italic;
+  color: white;
   font-family: "Bebas Neue", cursive;
-  color: white; }
+  font-size: 4rem; }
 
 .parrafo {
   display: flex;
@@ -393,8 +399,8 @@ footer {
   margin-bottom: 20px; }
   .estilo__listas h3 {
     color: white;
-    font-size: 1.5rem;
-    font-family: "Bebas Neue", cursive; }
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5rem; }
   .estilo__listas iframe {
     width: 25vw;
     height: 50vh; }
@@ -405,10 +411,10 @@ footer {
   align-items: center;
   margin-bottom: 3rem; }
   .tours h3 {
-    font-size: 3rem;
     font-style: italic;
+    color: white;
     font-family: "Bebas Neue", cursive;
-    color: white; }
+    font-size: 3rem; }
   .tours ul {
     display: flex;
     flex-direction: column;
@@ -428,12 +434,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
   font-style: italic;
-  font-family: "Bebas Neue", cursive;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  color: white; }
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem; }
 
 .estilo__galeria iframe {
   width: 700px;
