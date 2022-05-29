@@ -89,16 +89,12 @@ footer {
         display: flex;
         flex-direction: row;
         padding: 0.5rem;
+        list-style: none;
     }
     h3 {
         font-style: italic;
         @include titulo($color-font, $font-principal, 1rem)
     }
-}
-
-.logo__redes {
-    width: 20vw;
-    height: 20vh;
 }
 
 .pie p {
