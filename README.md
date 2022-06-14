@@ -6,4 +6,4 @@
 <p>Este es un proyecto final para coderhouse en el cual utilize HTML5, Figma, CSS, SASS y Bootstrap.
 </p>
 
-<img src=recursos/captura-de-pantalla.png>
+<img src=recursos/captura-de-pantalla.jpg>
