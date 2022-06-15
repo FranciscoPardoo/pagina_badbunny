@@ -1,3 +1,9 @@
+@mixin titulo ($color-font, $font-principal, $font-size){
+    color: $color-font;
+    font-family: $font-principal;
+    font-size: $font-size;
+}
+
 .header {
     &__bg-yellow {
         background: $color-uno-degrade;
@@ -11,10 +17,8 @@
     &__titulo {
         display: flex;
         justify-content: flex-start;
-        color: $color-font;
-        font-size: 6rem;
         font-style: italic;
-        font-family: $font-principal;
+        @include titulo($color-font, $font-principal, 6rem)
     }
     &__menu {
         display: flex;

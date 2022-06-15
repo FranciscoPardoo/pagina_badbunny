@@ -1,3 +1,9 @@
+@mixin titulo ($color-font, $font-principal, $font-size){
+    color: $color-font;
+    font-family: $font-principal;
+    font-size: $font-size;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -11,10 +17,11 @@ footer {
         display: flex;
         flex-direction: row;
         padding: 0.5rem;
+        list-style: none;
     }
     h3 {
         font-style: italic;
-        font-family: $font-principal;
+        @include titulo($color-font, $font-principal, 1rem)
     }
 }
 

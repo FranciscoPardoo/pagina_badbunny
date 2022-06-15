@@ -11,10 +11,10 @@
 .header__titulo {
   display: flex;
   justify-content: flex-start;
-  color: white;
-  font-size: 6rem;
   font-style: italic;
-  font-family: "Bebas Neue", cursive; }
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 6rem; }
 
 .header__menu {
   display: flex;
@@ -41,16 +41,21 @@ footer {
   footer ul {
     display: flex;
     flex-direction: row;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    list-style: none; }
   footer h3 {
     font-style: italic;
-    font-family: "Bebas Neue", cursive; }
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1rem; }
 
 .pie p {
   font-family: "Bebas Neue", cursive; }
 
+/* media querie tablet*/
 /* Media Querie */
 @media (min-width: 541px) and (max-width: 720px) {
+  /* index */
   .header__logo {
     display: flex;
     flex-direction: column;
@@ -59,7 +64,7 @@ footer {
     font-size: 4rem; }
   .header__menu ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-size: 1.5rem; }
   .header ul li, .header footer ul li {
@@ -75,7 +80,7 @@ footer {
   p {
     width: 90vw;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
     line-height: 1.5rem; }
   .div__img {
     display: flex;
@@ -84,6 +89,8 @@ footer {
     width: 400px;
     height: 350px;
     border-radius: 1rem; }
+  .cards {
+    display: none; }
   footer {
     display: flex;
     flex-direction: column;
@@ -96,6 +103,7 @@ footer {
     footer h3 {
       font-size: 2rem;
       font-style: italic; }
+  /* discos */
   .titulos__dos {
     display: flex;
     justify-content: space-around;
@@ -108,14 +116,13 @@ footer {
     justify-content: center;
     align-content: center;
     font-size: 1.5rem; }
-  .estilo__listas {
-    margin: 1rem; }
-    .estilo__listas h3 {
-      font-size: 1.5rem;
-      text-align: center; }
-    .estilo__listas iframe {
-      width: 30vw;
-      height: 40vh; }
+  .estilo__listas h3 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .estilo__listas iframe {
+    width: 50vw;
+    height: 40vh; }
+  /* tours */
   .tours {
     display: flex;
     flex-direction: column;
@@ -124,11 +131,14 @@ footer {
     .tours h3 {
       font-size: 2rem;
       font-style: italic; }
-    .tours ul {
+    .tours tr {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.5rem; }
+      flex-direction: row;
+      justify-content: space-between;
+      width: 75vw;
+      font-size: 1.5rem;
+      font-family: "Bebas Neue", cursive;
+      color: white; }
   .titulo__sub {
     display: flex;
     justify-content: center;
@@ -137,6 +147,7 @@ footer {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  /* galeria */
   .estilo__galeria {
     display: flex;
     align-items: center;
@@ -149,6 +160,7 @@ footer {
   .tamaño__img {
     width: 200px;
     height: 400px; }
+  /* contacto */
   .img__contacto {
     display: none; }
   .formulario {
@@ -162,7 +174,9 @@ footer {
     width: 35vw;
     height: 20vh; } }
 
+/* media querie mobile */
 @media (min-width: 320px) and (max-width: 540px) {
+  /* index */
   .header__logo {
     display: flex;
     flex-direction: column;
@@ -172,7 +186,7 @@ footer {
     font-style: italic; }
   .header__menu ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-size: 1rem; }
   .header__menu ul li, .header__menu footer ul li {
@@ -190,6 +204,8 @@ footer {
     width: 290px;
     height: 250px;
     border-radius: 1rem; }
+  .cards {
+    display: none; }
   footer {
     display: flex;
     flex-direction: column;
@@ -206,6 +222,7 @@ footer {
   .pie p {
     width: 60vw;
     font-size: 0.5rem; }
+  /* discos */
   .titulos__dos {
     display: flex;
     justify-content: space-around;
@@ -216,7 +233,7 @@ footer {
   .parrafo p {
     display: flex;
     align-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.5rem; }
   .estilo__listas {
     display: flex;
@@ -226,11 +243,12 @@ footer {
     align-items: center;
     margin: 1rem; }
     .estilo__listas h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-align: center; }
     .estilo__listas iframe {
       width: 50vw;
       height: 50vh; }
+  /* tours */
   .tours {
     display: flex;
     flex-direction: column;
@@ -239,11 +257,14 @@ footer {
     .tours h3 {
       font-size: 1.5rem;
       font-style: italic; }
-    .tours ul {
+    .tours tr {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1rem; }
+      flex-direction: row;
+      justify-content: space-between;
+      width: 75vw;
+      font-size: 1.2rem;
+      font-family: "Bebas Neue", cursive;
+      color: white; }
   .titulo__sub {
     display: flex;
     justify-content: center;
@@ -252,6 +273,7 @@ footer {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  /* galeria */
   .estilo__galeria {
     display: flex;
     align-items: center;
@@ -264,6 +286,7 @@ footer {
   .tamaño__img {
     width: 200px;
     height: 200px; }
+  /* contacto */
   .img__contacto {
     display: none; }
   .formulario {
@@ -288,6 +311,7 @@ footer {
 body {
   background-color: #0c0c0c; }
 
+/* index */
 .header__bg-yellow {
   background: #ff7c00;
   background: linear-gradient(180deg, #ff7c00 0%, #e8ff00 58%); }
@@ -345,6 +369,8 @@ p {
   display: flex;
   align-items: center;
   margin-left: 4rem; }
+  .cards__tamaño {
+    width: 18rem; }
 
 footer {
   display: flex;
@@ -369,6 +395,7 @@ footer {
 .pie p {
   font-family: "Bebas Neue", cursive; }
 
+/* discos */
 .titulos__dos {
   display: flex;
   justify-content: space-around;
@@ -407,6 +434,7 @@ footer {
     width: 25vw;
     height: 50vh; }
 
+/* tours */
 .tours {
   display: flex;
   flex-direction: column;
@@ -429,6 +457,7 @@ footer {
 .soldout {
   text-decoration: line-through; }
 
+/* galeria */
 .tamaño__img {
   width: 900px;
   height: 600px; }
@@ -454,6 +483,7 @@ footer {
   display: flex;
   justify-content: center; }
 
+/* contacto */
 .img__contacto {
   width: 450px;
   height: 500px; }
@@ -474,8 +504,10 @@ footer {
 .boton {
   margin-bottom: 4rem; }
 
+/* media querie tablet*/
 /* Media Querie */
 @media (min-width: 541px) and (max-width: 720px) {
+  /* index */
   .header__logo {
     display: flex;
     flex-direction: column;
@@ -484,7 +516,7 @@ footer {
     font-size: 4rem; }
   .header__menu ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-size: 1.5rem; }
   .header ul li, .header footer ul li {
@@ -500,7 +532,7 @@ footer {
   p {
     width: 90vw;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
     line-height: 1.5rem; }
   .div__img {
     display: flex;
@@ -509,6 +541,8 @@ footer {
     width: 400px;
     height: 350px;
     border-radius: 1rem; }
+  .cards {
+    display: none; }
   footer {
     display: flex;
     flex-direction: column;
@@ -521,6 +555,7 @@ footer {
     footer h3 {
       font-size: 2rem;
       font-style: italic; }
+  /* discos */
   .titulos__dos {
     display: flex;
     justify-content: space-around;
@@ -533,14 +568,13 @@ footer {
     justify-content: center;
     align-content: center;
     font-size: 1.5rem; }
-  .estilo__listas {
-    margin: 1rem; }
-    .estilo__listas h3 {
-      font-size: 1.5rem;
-      text-align: center; }
-    .estilo__listas iframe {
-      width: 30vw;
-      height: 40vh; }
+  .estilo__listas h3 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .estilo__listas iframe {
+    width: 50vw;
+    height: 40vh; }
+  /* tours */
   .tours {
     display: flex;
     flex-direction: column;
@@ -554,7 +588,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       width: 75vw;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-family: "Bebas Neue", cursive;
       color: white; }
   .titulo__sub {
@@ -565,6 +599,7 @@ footer {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  /* galeria */
   .estilo__galeria {
     display: flex;
     align-items: center;
@@ -577,6 +612,7 @@ footer {
   .tamaño__img {
     width: 200px;
     height: 400px; }
+  /* contacto */
   .img__contacto {
     display: none; }
   .formulario {
@@ -590,7 +626,9 @@ footer {
     width: 35vw;
     height: 20vh; } }
 
+/* media querie mobile */
 @media (min-width: 320px) and (max-width: 540px) {
+  /* index */
   .header__logo {
     display: flex;
     flex-direction: column;
@@ -600,7 +638,7 @@ footer {
     font-style: italic; }
   .header__menu ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-size: 1rem; }
   .header__menu ul li, .header__menu footer ul li {
@@ -618,6 +656,8 @@ footer {
     width: 290px;
     height: 250px;
     border-radius: 1rem; }
+  .cards {
+    display: none; }
   footer {
     display: flex;
     flex-direction: column;
@@ -634,6 +674,7 @@ footer {
   .pie p {
     width: 60vw;
     font-size: 0.5rem; }
+  /* discos */
   .titulos__dos {
     display: flex;
     justify-content: space-around;
@@ -644,7 +685,7 @@ footer {
   .parrafo p {
     display: flex;
     align-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.5rem; }
   .estilo__listas {
     display: flex;
@@ -654,11 +695,12 @@ footer {
     align-items: center;
     margin: 1rem; }
     .estilo__listas h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-align: center; }
     .estilo__listas iframe {
       width: 50vw;
       height: 50vh; }
+  /* tours */
   .tours {
     display: flex;
     flex-direction: column;
@@ -672,7 +714,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       width: 75vw;
-      font-size: 2rem;
+      font-size: 1.2rem;
       font-family: "Bebas Neue", cursive;
       color: white; }
   .titulo__sub {
@@ -683,6 +725,7 @@ footer {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  /* galeria */
   .estilo__galeria {
     display: flex;
     align-items: center;
@@ -695,6 +738,7 @@ footer {
   .tamaño__img {
     width: 200px;
     height: 200px; }
+  /* contacto */
   .img__contacto {
     display: none; }
   .formulario {
